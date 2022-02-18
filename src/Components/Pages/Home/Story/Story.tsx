@@ -12,7 +12,7 @@ const Story = ({ className }: Props) => {
       title: "2021",
       title1: "브랜드/편집 TVC 편집",
       conten1: "MOTION",
-      title2: "브랜드/편집 TVC 편집",
+      title2: "브랜드/편집 TVC 편집편집",
       content2: "MOTION",
       title3: "Samsung Galaxy FAN Curator",
     },
