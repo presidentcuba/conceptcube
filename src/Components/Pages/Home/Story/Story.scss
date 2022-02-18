@@ -1,0 +1,90 @@
+.story-page {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #99dd6e;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+.story-list {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.story-box {
+  display: flex;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cdcdcd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #675f85;
+}
+.story {
+  width: 330px;
+  height: 270px;
+  overflow-y: scroll;
+  padding-left: 16px;
+  &-heading {
+    font-size: 40.5px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #1b0080;
+  }
+  &-item {
+    height: 90px;
+    p {
+      color: #675f85;
+      span {
+        color: #1b0080;
+        font-weight: 600px;
+      }
+    }
+  }
+  &-title {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.65;
+    color: #222;
+    margin-bottom: 0;
+  }
+  &-detail {
+    font-size: 13px;
+    font-weight: light;
+    line-height: 26.5px;
+    letter-spacing: 0.65;
+    color: #222;
+  }
+}
+.story-text {
+  font-size: 80px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.51;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1b0080;
+}
+@media only screen and (max-width: 1200px) {
+  .story-page {
+    .story-list {
+      .story-box {
+        width: 33.33%;
+        padding: 0px 10px;
+      }
+    }
+  }
+}
